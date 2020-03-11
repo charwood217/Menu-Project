@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Totties Asian Fusion</title>
+    <link href="home.css" rel="stylesheet">
+    <link rel="icon" type="image" href="Totties.jpg" />
+    <script src="home.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="row">
+            <div class="col-1-4">
+                <img src="Totties.jpg" alt="Totties Asian Fusion">
+            </div>
+            <div class="col-2-4">
+                <div class="row">
+                    <h1>Totties Asian Fusion #1</h1>
+                </div>
+                <div class="row">
+                    <h3>At Thomas and Hayden <br> Call us at 480-970-0633</h3>
+                </div>
+            </div>
+            <div class="col-1-20">
+                <span onclick="openNav()"><img src="menu_button.png" height="20px" width="20px"></span>
+            </div>
+        </div>
+    </header>
+
+        <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="index.html">Home Page</a>
+            <a href="appetizers.html">Appetizers</a>
+            <a href="soups.html">Soups</a>
+            <a href="thai.html">Thai/Vietnamese</a>
+            <a href="chinese.html">Chinese Entres</a>
+            <a href="veggies.html">Chinese Veggies</a>
+            <a href="rice.html">Rice</a>
+            <a href="deserts.html">Deserts</a>
+        </div>
+  
+    </div>
+
+    <div class="row">
+        <article>
+            <h1 id="article"></h1>
+            <h4>
+
+            </h4>
+        </article>
+    </div>
+    <footer>
+        <p>&copy;Copyright Totties Asian Fusion #1 2015</p>
+    </footer>
 </body>
 </html>

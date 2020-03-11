@@ -1,26 +1,41 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap');
+
+/*HTML and Body styles*/
 html{
     font-family: 'Cinzel Decorative', cursive;
-    background: black;
-    color: grey;
+    background-color: rgb(58, 58, 58); 
+    border: yellow 5px outset;
 }
+
+/*Header Styles*/
 header{
     border-radius: 10px;
-    background-color: red;
+    background-color: #B32322;
     color: black;
 }
 h1{
     font-size: 3em;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 h3{
     padding-left: 10em;
     margin: 0;
     font-size: 14px;
 }
+img{
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 30px;
+}
 
+/*div styles*/
+.row{
+    margin-top: none;
+    padding-top: none;
+}
 .row::after{
     display: table;
     clear: both;
@@ -30,10 +45,115 @@ div[class^="col-"]{
     float: left;
 }
 .col-1-4{width:25%}
+.col-2-4{width:70%}
 .col-3-4{width:75%}
+.col-1-5{
+    width:20%;
+    border-top: 5px yellow solid;
+    border-right: 5px yellow solid;
+    border-bottom: 5px yellow solid;
+}
+.col-4-5{width:79.5%;}
+.col-1-20{width:5%;}
+.col-1-3{width: 32%;}
 
-img{
-    padding-top: 5px;
-    padding-left: 5px;
-    border-radius: 30px;
+/*Nav Styles*/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+/*Article Styles*/
+article{
+    color: #B32322;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px;
+}
+h1#article{
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 3em;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+h4{
+    margin: 0;
+    text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+p#hid{
+    color: white;
+}
+article img{
+    text-align: center;
+}
+
+
+/*Footer Styles*/
+footer{
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 5px #B32322 outset;
+    background-color: black;
 }
