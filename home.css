@@ -135,9 +135,11 @@ h4{
     margin: 0;
     text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
     text-align: center;
+    border-bottom: 5px black solid;
 }
 p{
     text-align: center;
+    margin-top: 50px;
 }
 p#hid{
     color: white;
@@ -149,6 +151,7 @@ p#hid{
     width: 90%;
     height: 350px;
     margin-bottom: 50px;
+    margin-top: 50px;
   }
   #center {
     display: block;
@@ -157,6 +160,7 @@ p#hid{
     width: 75%;
     height: 500px;
     margin-bottom: 50px;
+    margin-top: 50px;
   }
 /*Footer Styles*/
 footer{
