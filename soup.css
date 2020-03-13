@@ -147,8 +147,9 @@ p#hid{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: 350px;
-    margin-top: 35px;
+    height: 400px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 article span{
     text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
